@@ -1,0 +1,51 @@
+{
+  "name": "kunicmarko/sonata-auto-configure-bundle",
+  "type": "symfony-bundle",
+  "description": "Symfony Bundle that auto configures Sonata Admin.",
+  "keywords": [
+    "symfony",
+    "sonata",
+    "sonata-admin",
+    "autoconfigure"
+  ],
+  "homepage": "https://github.com/kunicmarko20/SonataAutoConfigureBundle",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Marko Kunic",
+      "email": "kunicmarko20@gmail.com",
+      "homepage": "https://twitter.com/kunicmarko20"
+    }
+  ],
+  "require": {
+    "php": "^7.1",
+    "doctrine/annotations": "^1.6",
+    "doctrine/inflector": "^1.3",
+    "sonata-project/admin-bundle": "^3.35",
+    "symfony/config": "^3.4 || ^4.0 || ^4.1",
+    "symfony/dependency-injection": "^3.4 || ^4.0 || ^4.1",
+    "symfony/http-kernel": "^3.4 || ^4.0 || ^4.1"
+  },
+  "require-dev": {
+    "matthiasnoback/symfony-dependency-injection-test": "^3.0",
+    "symfony/phpunit-bridge": "^4.0"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "1.x-dev"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "KunicMarko\\SonataAutoConfigureBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "KunicMarko\\SonataAutoConfigureBundle\\Tests\\": "tests/"
+    }
+  }
+}

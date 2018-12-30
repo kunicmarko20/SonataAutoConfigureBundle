@@ -20,7 +20,7 @@ Documentation
 
 ## Installation
 
-**1.**  Add dependency with composer
+**1.**  Add dependency with Composer
 
 ```bash
 composer require kunicmarko/sonata-auto-configure-bundle

@@ -54,38 +54,43 @@ sonata_auto_configure:
 
 ## How does it work
 
-This bundle tries to guess some stuff about your admin class. You only have to create your admin
-classes and be sure that admin folder is included in auto discovery and that autoconfigure is enabled.
+This bundle tries to guess some stuff about your admin class. You only have to
+create your admin classes and be sure that the admin directory is included in
+auto discovery and that autoconfigure is enabled.
 
-This bundle will tag your admin classes with `sonata.admin`, then we find all admin classes and if
-autoconfigure is enabled we take class name. If you defined a suffix in the config (by default it is
-`Admin`) we remove it to get the name, so if you had `CategoryAdmin` we get `Category`.
+This bundle will tag your admin classes with `sonata.admin`, then we find all
+admin classes and if autoconfigure is enabled we take the class name. If you
+defined a suffix in the config (by default it is `Admin`) we remove it to get
+the name of the entity, so if you had `CategoryAdmin` we get `Category`.
 
-After that we check if `AdminOption` annotation is present, annotation has more priority than our
-guessing. If annotation is not defined or some of the values that are mandatory are not present
-we still try to guess.
+After that we check if the `AdminOption` annotation is present, annotations
+have a higher priority than our guesses. If no annotation is defined or some of
+the values that are mandatory are not present we still try to guess.
 
-First we set the label and based on previous example it will be `Category`.
+First, we set the label and based on previous example it will be `Category`.
 
-Then we set the admin code which will be the service id, it will be `admin.category`.
+Then, we set the admin code which will be the service id, it will be `admin.category`.
 
-After we try to find Entity `Category` in the list of namespaces you defined (by default it is just
-`App\Entity`). If the entity is not found an exception is thrown and you will probably need to use
-annotation to define the entity. You can set `manager_type` per namespace.
+After, we try to find the `Category` entity in the list of namespaces you
+defined (by default it is just `App\Entity`). If the entity is not found an
+exception is thrown and you will probably need to use an annotation to define
+the entity. You can set the `manager_type` attribute per namespace.
 
-By default we will take `manager_type` from annotation, if that is not present we will take it
-from namespace definition. If you define entity in your annotation but not the `manager_type` then
-we will take the manager type from bundle configuration that will be available as parameter a
-`sonata_auto_configure.admin.manager_type`.
+By default we will take `manager_type` from annotations, if they are not
+present we will take it from the namespace definition. If you define the entity
+in your annotation but not the `manager_type` then we will take the manager
+type from the bundle configuration that will be available as a
+`sonata_auto_configure.admin.manager_type` parameter.
 
-Then we try to guess a controller, same as for entity we try to guess it in the list of namespaces
-but we add a suffix (as in most situation people name it `CategoryController`) that you can disable
-in configuration. If there is no controller we leave it as `null` and sonata will add its default
-controller.
+Then we try to guess a controller, same as for the entity we try to guess it in
+the list of namespaces but we add a suffix (as in most situations people name
+it `CategoryController`) that you can disable in configuration. If there is no
+controller we leave it as `null` and sonata will add its default controller.
 
-And that is it. We have all the info we need for defining admin class, if you used some of the
-other tag options when defining your admin class you will have to use Annotation or register
-admin on your own with `autoconfigure: false` that would look like:
+And that is it. We have all the info we need for defining an admin class, if
+you used some of the other tag options when defining your admin class you will
+have to use Annotation or register admin on your own with `autoconfigure:
+false` that would look like:
 
 ```yaml
 App\Admin\CategoryAdmin:
@@ -96,8 +101,7 @@ App\Admin\CategoryAdmin:
     public: true
 ```
 
-Since your admin class is autowired you can still use setter injection but you have to add an
-`@required` annotation:
+Since your admin class is autowired you can still use setter injection but you have to add a `@required` annotation:
 
 ```php
 /**

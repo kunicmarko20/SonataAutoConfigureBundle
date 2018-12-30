@@ -26,9 +26,10 @@ Documentation
 composer require kunicmarko/sonata-auto-configure-bundle
 ```
 
-**2.** Register the bundle in your `bundles.php`
+**2.** Enable the bundle for all Symfony environments:
 
 ```php
+// bundles.php
 return [
     //...
     KunicMarko\SonataAutoConfigureBundle\SonataAutoConfigureBundle::class => ['all' => true],

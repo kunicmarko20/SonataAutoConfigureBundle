@@ -107,7 +107,7 @@ Since your admin class is autowired you can still use setter injection but you h
 /**
  * @required
  */
-public function setSomeSerivce(SomeService $someService)
+public function setSomeService(SomeService $someService)
 {
     $this->someService = $someService;
 }

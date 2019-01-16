@@ -137,7 +137,6 @@ use App\Entity\Category;
  *     labelCatalogue="App",
  *     pagerType="simple",
  *     controller=CategoryController::class,
- *     serviceId="app.admin.category",
  *     entity=Category::class,
  *     adminCode="admin_code",
  * )

@@ -77,6 +77,11 @@ final class AdminOptions
      */
     public $controller;
 
+    /**
+     * @var bool
+     */
+    public $autowireEntity = true;
+
     public function getOptions(): array
     {
         return array_filter(

@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\Tests\DependencyInjection\Compiler;
 
+use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\DisableAutowireEntityAdmin;
+use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
 use Doctrine\Common\Annotations\AnnotationReader;
 use KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler\AutoConfigureAdminClassesCompilerPass;
 use KunicMarko\SonataAutoConfigureBundle\DependencyInjection\SonataAutoConfigureExtension;
@@ -41,7 +43,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
     /**
      * @dataProvider processData
      */
-    public function testProcess(string $admin, string $adminCode, array $tagOptions): void
+    public function testProcess(string $admin, ?string $entity, string $adminCode, array $tagOptions): void
     {
         $this->loadConfig([
             'entity' => [
@@ -74,6 +76,11 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             $tagOptions,
             $adminDefinition->getTag('sonata.admin')[0]
         );
+
+        $this->assertSame(
+            $entity,
+            $adminDefinition->getArgument(1)
+        );
     }
 
     public function processData(): array
@@ -81,6 +88,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
         return [
             [
                 CategoryAdmin::class,
+                Category::class,
                 'admin.category',
                 [
                     'manager_type' => 'orm',
@@ -92,10 +100,23 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             ],
             [
                 AnnotationAdmin::class,
+                Category::class,
                 'admin.annotation',
                 [
                     'manager_type' => 'orm',
                     'label' => 'This is a Label',
+                    'show_in_dashboard' => true,
+                    'keep_open' => false,
+                    'on_top' => false,
+                ],
+            ],
+            [
+                DisableAutowireEntityAdmin::class,
+                null,
+                'admin.disable_autowire_entity',
+                [
+                    'manager_type' => 'orm',
+                    'label' => 'Disable Autowire Entity',
                     'show_in_dashboard' => true,
                     'keep_open' => false,
                     'on_top' => false,

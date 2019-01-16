@@ -139,6 +139,7 @@ use App\Entity\Category;
  *     controller=CategoryController::class,
  *     entity=Category::class,
  *     adminCode="admin_code",
+ *     autowireEntity=true,
  * )
  */
 class CategoryAdmin

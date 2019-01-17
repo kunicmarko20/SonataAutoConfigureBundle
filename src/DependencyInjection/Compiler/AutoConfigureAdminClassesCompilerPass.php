@@ -102,7 +102,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
             $annotation->adminCode = 'admin.' . Inflector::tableize($name);
         }
 
-        if (!$annotation->entity) {
+        if (!$annotation->entity && $annotation->autowireEntity) {
             [$annotation->entity, $managerType] = $this->findEntity($name);
 
             if (!$annotation->managerType) {

@@ -35,6 +35,11 @@ final class AdminOptions
     /**
      * @var bool
      */
+    public $showMosaicButton = true;
+
+    /**
+     * @var bool
+     */
     public $keepOpen = false;
 
     /**
@@ -90,6 +95,7 @@ final class AdminOptions
                 'group'                     => $this->group,
                 'label'                     => $this->label,
                 'show_in_dashboard'         => $this->showInDashboard,
+                'show_mosaic_button'        => $this->showMosaicButton,
                 'keep_open'                 => $this->keepOpen,
                 'on_top'                    => $this->onTop,
                 'icon'                      => $this->icon,

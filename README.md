@@ -43,6 +43,10 @@ sonata_auto_configure:
     admin:
         suffix: Admin
         manager_type: orm
+        label_catalogue: ~
+        label_translator_strategy: ~
+        group: ~
+        pager_type: ~
     entity:
         namespaces:
             - { namespace: App\Entity, manager_type: orm }

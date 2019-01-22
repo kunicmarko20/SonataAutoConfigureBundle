@@ -130,6 +130,7 @@ use App\Entity\Category;
  *     managerType="orm",
  *     group="Category",
  *     showInDashboard=true,
+ *     showMosaicButton=true,
  *     keepOpen=true,
  *     onTop=true,
  *     icon="<i class='fa fa-user'></i>",

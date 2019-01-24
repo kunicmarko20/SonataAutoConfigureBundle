@@ -46,18 +46,21 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
     public function testProcess(string $admin, ?string $entity, string $adminCode, array $tagOptions): void
     {
         $this->loadConfig([
+            'admin' => [
+                'group' => 'test',
+            ],
             'entity' => [
                 'namespaces' => [
                     [
-                        'namespace' => 'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity'
-                    ]
-                ]
+                        'namespace' => 'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity',
+                    ],
+                ],
             ],
             'controller' => [
                 'namespaces' => [
-                    'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Controller'
-                ]
-            ]
+                    'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Controller',
+                ],
+            ],
         ]);
 
         $this->containerBuilder->setDefinition(
@@ -92,6 +95,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 'admin.category',
                 [
                     'manager_type' => 'orm',
+                    'group' => 'test',
                     'label' => 'Category',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,
@@ -105,6 +109,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 'admin.annotation',
                 [
                     'manager_type' => 'orm',
+                    'group' => 'not test',
                     'label' => 'This is a Label',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,
@@ -118,6 +123,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 'admin.disable_autowire_entity',
                 [
                     'manager_type' => 'orm',
+                    'group' => 'test',
                     'label' => 'Disable Autowire Entity',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,

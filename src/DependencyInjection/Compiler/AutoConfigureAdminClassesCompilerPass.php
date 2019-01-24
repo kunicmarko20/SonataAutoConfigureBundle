@@ -53,6 +53,13 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
         $this->controllerNamespaces = $container->getParameter('sonata.auto_configure.controller.namespaces');
         $this->controllerSuffix = $container->getParameter('sonata.auto_configure.controller.suffix');
 
+        $annotationDefaults['label_catalogue'] = $container
+            ->getParameter('sonata.auto_configure.admin.label_catalogue');
+        $annotationDefaults['label_translator_strategy'] = $container
+            ->getParameter('sonata.auto_configure.admin.label_translator_strategy');
+        $annotationDefaults['group'] = $container->getParameter('sonata.auto_configure.admin.group');
+        $annotationDefaults['pager_type'] = $container->getParameter('sonata.auto_configure.admin.pager_type');
+
         foreach ($container->findTaggedServiceIds('sonata.admin') as $id => $attributes) {
             $definition = $container->getDefinition($id);
 
@@ -74,7 +81,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
                 AdminOptions::class
             ) ?? new AdminOptions();
 
-            $this->setDefaultValuesForAnnotation($annotation, $name);
+            $this->setDefaultValuesForAnnotation($annotation, $name, $annotationDefaults);
 
             $container->removeDefinition($id);
             $container->setDefinition(
@@ -92,14 +99,30 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
         }
     }
 
-    private function setDefaultValuesForAnnotation(AdminOptions $annotation, string $name): void
+    private function setDefaultValuesForAnnotation(AdminOptions $annotation, string $name, array $defaults): void
     {
         if (!$annotation->label) {
             $annotation->label = Inflector::ucwords(str_replace('_', ' ', Inflector::tableize($name)));
         }
 
+        if (!$annotation->labelCatalogue) {
+            $annotation->labelCatalogue = $defaults['label_catalogue'];
+        }
+
+        if (!$annotation->labelTranslatorStrategy) {
+            $annotation->labelTranslatorStrategy = $defaults['label_translator_strategy'];
+        }
+
         if (!$annotation->adminCode) {
             $annotation->adminCode = 'admin.' . Inflector::tableize($name);
+        }
+
+        if (!$annotation->group) {
+            $annotation->group = $defaults['group'];
+        }
+
+        if (!$annotation->pagerType) {
+            $annotation->pagerType = $defaults['pager_type'];
         }
 
         if (!$annotation->entity && $annotation->autowireEntity) {

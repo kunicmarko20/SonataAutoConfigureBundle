@@ -10,7 +10,8 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
 /**
  * @Sonata\AdminOptions(
  *     label="This is a Label",
- *     entity=Category::class
+ *     entity=Category::class,
+ *     group="not test",
  * )
  * @author Marko Kunic <kunicmarko20@gmail.com>
  */

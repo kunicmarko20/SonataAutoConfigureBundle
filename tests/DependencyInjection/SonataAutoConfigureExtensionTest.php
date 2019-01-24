@@ -20,6 +20,11 @@ final class SonataAutoConfigureExtensionTest extends AbstractExtensionTestCase
             'sonata.auto_configure.admin.suffix',
             'Admin'
         );
+
+        $this->assertContainerBuilderHasParameter(
+            'sonata.auto_configure.admin.label_translator_strategy',
+            null
+        );
     }
 
     protected function getContainerExtensions(): array

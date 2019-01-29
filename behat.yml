@@ -1,0 +1,19 @@
+default:
+  suites:
+    default:
+      contexts:
+        - KunicMarko\SonataAutoConfigureBundle\Features\Context\AdminContext:
+            entityManager: '@doctrine.orm.entity_manager'
+
+  extensions:
+    Behat\MinkExtension:
+      base_url: 'http://127.0.0.1:8000/'
+      goutte: ~
+      selenium2: ~
+    Behat\Symfony2Extension:
+      kernel:
+        env: test
+        debug: true
+        path: features/Fixtures/Project/src/Kernel.php
+        class: KunicMarko\SonataAutoConfigureBundle\Features\Fixtures\Project\Kernel
+        bootstrap: tests/bootstrap.php

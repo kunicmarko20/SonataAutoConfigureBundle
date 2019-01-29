@@ -1,4 +1,4 @@
 sonata_auto_configure:
     entity:
         namespaces:
-            - { namespace: KunicMarko\SonataAutoConfigureBundle\Features\Fixtures\Project\Entity, manager_type: orm }
+            - {namespace: KunicMarko\SonataAutoConfigureBundle\Features\Fixtures\Project\Entity, manager_type: orm}

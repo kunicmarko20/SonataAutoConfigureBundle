@@ -43,7 +43,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
     /**
      * @dataProvider processData
      */
-    public function testProcess(string $admin, ?string $entity, string $adminCode, array $tagOptions): void
+    public function testProcess(string $admin, ?string $entity, ?string $adminCode, array $tagOptions): void
     {
         $this->loadConfig([
             'admin' => [
@@ -63,8 +63,10 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             ],
         ]);
 
+        $definitionId = $adminCode ?? $admin;
+
         $this->containerBuilder->setDefinition(
-            $admin,
+            $definitionId,
             (new Definition($admin))->addTag('sonata.admin')->setAutoconfigured(true)
         );
 
@@ -72,7 +74,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
 
         $this->assertInstanceOf(
             Definition::class,
-            $adminDefinition = $this->containerBuilder->getDefinition($adminCode)
+            $adminDefinition = $this->containerBuilder->getDefinition($definitionId)
         );
 
         $this->assertSame(
@@ -106,7 +108,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             [
                 AnnotationAdmin::class,
                 Category::class,
-                'admin.annotation',
+                null,
                 [
                     'manager_type' => 'orm',
                     'group' => 'not test',

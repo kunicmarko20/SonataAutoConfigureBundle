@@ -85,7 +85,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
 
             $container->removeDefinition($id);
             $container->setDefinition(
-                $annotation->adminCode,
+                $annotation->adminCode ?? $id,
                 (new Definition($adminClass))
                     ->addTag('sonata.admin', $annotation->getOptions())
                     ->setArguments([
@@ -111,10 +111,6 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
 
         if (!$annotation->labelTranslatorStrategy) {
             $annotation->labelTranslatorStrategy = $defaults['label_translator_strategy'];
-        }
-
-        if (!$annotation->adminCode) {
-            $annotation->adminCode = 'admin.' . Inflector::tableize($name);
         }
 
         if (!$annotation->group) {

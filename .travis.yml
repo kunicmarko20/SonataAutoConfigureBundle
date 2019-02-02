@@ -3,6 +3,7 @@ language: php
 php:
   - '7.1'
   - '7.2'
+  - '7.3'
   - nightly
 
 env:
@@ -12,16 +13,15 @@ env:
 matrix:
   fast_finish: true
   include:
-    - php: '7.1'
-      env: SYMFONY=3.4.*
-    - php: '7.1'
-      env: SYMFONY=4.0.*
+    - php: '7.2'
+      env: TARGET=behat
 
   allow_failures:
     - php: nightly
 
 install:
   - if [ -x .travis/install_${TARGET}.sh ]; then .travis/install_${TARGET}.sh; fi;
+  - composer install
 
 script:
   - if [ -x .travis/script_${TARGET}.sh ]; then .travis/script_${TARGET}.sh; fi;

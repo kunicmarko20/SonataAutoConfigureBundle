@@ -13,8 +13,6 @@ env:
 matrix:
   fast_finish: true
   include:
-    - php: '7.1'
-      env: COMPOSER_FLAGS="--prefer-dist --no-interaction --prefer-stable --quiet"
     - php: '7.2'
       env: TARGET=behat
 
@@ -23,6 +21,7 @@ matrix:
 
 install:
   - if [ -x .travis/install_${TARGET}.sh ]; then .travis/install_${TARGET}.sh; fi;
+  - composer install
 
 script:
   - if [ -x .travis/script_${TARGET}.sh ]; then .travis/script_${TARGET}.sh; fi;

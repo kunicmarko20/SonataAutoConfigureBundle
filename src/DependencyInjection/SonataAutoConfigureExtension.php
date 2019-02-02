@@ -17,6 +17,18 @@ final class SonataAutoConfigureExtension extends ConfigurableExtension
     {
         $container->setParameter('sonata.auto_configure.admin.suffix', $mergedConfig['admin']['suffix']);
         $container->setParameter('sonata.auto_configure.admin.manager_type', $mergedConfig['admin']['manager_type']);
+
+        $container->setParameter(
+            'sonata.auto_configure.admin.label_catalogue',
+            $mergedConfig['admin']['label_catalogue']
+        );
+        $container->setParameter(
+            'sonata.auto_configure.admin.label_translator_strategy',
+            $mergedConfig['admin']['label_translator_strategy']
+        );
+        $container->setParameter('sonata.auto_configure.admin.group', $mergedConfig['admin']['group']);
+        $container->setParameter('sonata.auto_configure.admin.pager_type', $mergedConfig['admin']['pager_type']);
+
         $container->setParameter('sonata.auto_configure.entity.namespaces', $mergedConfig['entity']['namespaces']);
         $container->setParameter('sonata.auto_configure.controller.suffix', $mergedConfig['controller']['suffix']);
         $container->setParameter(

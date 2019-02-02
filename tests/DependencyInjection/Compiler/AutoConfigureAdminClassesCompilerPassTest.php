@@ -43,25 +43,30 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
     /**
      * @dataProvider processData
      */
-    public function testProcess(string $admin, ?string $entity, string $adminCode, array $tagOptions): void
+    public function testProcess(string $admin, ?string $entity, ?string $adminCode, array $tagOptions): void
     {
         $this->loadConfig([
+            'admin' => [
+                'group' => 'test',
+            ],
             'entity' => [
                 'namespaces' => [
                     [
-                        'namespace' => 'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity'
-                    ]
-                ]
+                        'namespace' => 'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity',
+                    ],
+                ],
             ],
             'controller' => [
                 'namespaces' => [
-                    'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Controller'
-                ]
-            ]
+                    'KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Controller',
+                ],
+            ],
         ]);
 
+        $definitionId = $adminCode ?? $admin;
+
         $this->containerBuilder->setDefinition(
-            $admin,
+            $definitionId,
             (new Definition($admin))->addTag('sonata.admin')->setAutoconfigured(true)
         );
 
@@ -69,7 +74,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
 
         $this->assertInstanceOf(
             Definition::class,
-            $adminDefinition = $this->containerBuilder->getDefinition($adminCode)
+            $adminDefinition = $this->containerBuilder->getDefinition($definitionId)
         );
 
         $this->assertSame(
@@ -92,6 +97,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 'admin.category',
                 [
                     'manager_type' => 'orm',
+                    'group' => 'test',
                     'label' => 'Category',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,
@@ -102,9 +108,10 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             [
                 AnnotationAdmin::class,
                 Category::class,
-                'admin.annotation',
+                null,
                 [
                     'manager_type' => 'orm',
+                    'group' => 'not test',
                     'label' => 'This is a Label',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,
@@ -118,6 +125,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 'admin.disable_autowire_entity',
                 [
                     'manager_type' => 'orm',
+                    'group' => 'test',
                     'label' => 'Disable Autowire Entity',
                     'show_in_dashboard' => true,
                     'show_mosaic_button' => true,

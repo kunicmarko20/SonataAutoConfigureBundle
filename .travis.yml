@@ -14,7 +14,7 @@ matrix:
   fast_finish: true
   include:
     - php: '7.1'
-      env: COMPOSER_FLAGS="--prefer-lowest"
+      env: COMPOSER_FLAGS="--prefer-dist --no-interaction --prefer-stable --quiet"
     - php: '7.2'
       env: TARGET=behat
 

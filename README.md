@@ -45,6 +45,7 @@ sonata_auto_configure:
         manager_type: orm
         label_catalogue: ~
         label_translator_strategy: ~
+        translation_domain: ~
         group: ~
         pager_type: ~
     entity:
@@ -140,6 +141,7 @@ use App\Entity\Category;
  *     icon="<i class='fa fa-user'></i>",
  *     labelTranslatorStrategy="sonata.admin.label.strategy.native",
  *     labelCatalogue="App",
+ *     translationDomain="messages",
  *     pagerType="simple",
  *     controller=CategoryController::class,
  *     entity=Category::class,

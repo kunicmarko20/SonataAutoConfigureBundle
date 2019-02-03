@@ -25,6 +25,11 @@ final class SonataAutoConfigureExtensionTest extends AbstractExtensionTestCase
             'sonata.auto_configure.admin.label_translator_strategy',
             null
         );
+
+        $this->assertContainerBuilderHasParameter(
+            'sonata.auto_configure.admin.translation_domain',
+            null
+        );
     }
 
     protected function getContainerExtensions(): array

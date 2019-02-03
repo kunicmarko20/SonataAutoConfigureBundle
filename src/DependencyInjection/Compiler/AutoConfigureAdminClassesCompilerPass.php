@@ -57,6 +57,8 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
             ->getParameter('sonata.auto_configure.admin.label_catalogue');
         $annotationDefaults['label_translator_strategy'] = $container
             ->getParameter('sonata.auto_configure.admin.label_translator_strategy');
+        $annotationDefaults['translation_domain'] = $container
+            ->getParameter('sonata.auto_configure.admin.translation_domain');
         $annotationDefaults['group'] = $container->getParameter('sonata.auto_configure.admin.group');
         $annotationDefaults['pager_type'] = $container->getParameter('sonata.auto_configure.admin.pager_type');
 
@@ -84,7 +86,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
             $this->setDefaultValuesForAnnotation($annotation, $name, $annotationDefaults);
 
             $container->removeDefinition($id);
-            $container->setDefinition(
+            $definition = $container->setDefinition(
                 $annotation->adminCode ?? $id,
                 (new Definition($adminClass))
                     ->addTag('sonata.admin', $annotation->getOptions())
@@ -96,6 +98,10 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
                     ->setAutoconfigured(true)
                     ->setAutowired(true)
             );
+
+            if ($annotation->translationDomain) {
+                $definition->addMethodCall('setTranslationDomain', [$annotation->translationDomain]);
+            }
         }
     }
 
@@ -111,6 +117,10 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
 
         if (!$annotation->labelTranslatorStrategy) {
             $annotation->labelTranslatorStrategy = $defaults['label_translator_strategy'];
+        }
+
+        if (!$annotation->translationDomain) {
+            $annotation->translationDomain = $defaults['translation_domain'];
         }
 
         if (!$annotation->group) {

@@ -26,6 +26,10 @@ final class SonataAutoConfigureExtension extends ConfigurableExtension
             'sonata.auto_configure.admin.label_translator_strategy',
             $mergedConfig['admin']['label_translator_strategy']
         );
+        $container->setParameter(
+            'sonata.auto_configure.admin.translation_domain',
+            $mergedConfig['admin']['translation_domain']
+        );
         $container->setParameter('sonata.auto_configure.admin.group', $mergedConfig['admin']['group']);
         $container->setParameter('sonata.auto_configure.admin.pager_type', $mergedConfig['admin']['pager_type']);
 

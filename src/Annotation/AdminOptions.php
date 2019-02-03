@@ -65,6 +65,11 @@ final class AdminOptions
     /**
      * @var string
      */
+    public $translationDomain;
+
+    /**
+     * @var string
+     */
     public $pagerType;
 
     /**

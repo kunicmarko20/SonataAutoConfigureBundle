@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\DependencyInjection;
 
+use Sonata\AdminBundle\Admin\AdminExtensionInterface;
 use Sonata\AdminBundle\Admin\AdminInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\DependencyInjection\ConfigurableExtension;
@@ -42,5 +43,8 @@ final class SonataAutoConfigureExtension extends ConfigurableExtension
 
         $container->registerForAutoconfiguration(AdminInterface::class)
             ->addTag('sonata.admin');
+
+        $container->registerForAutoconfiguration(AdminExtensionInterface::class)
+            ->addTag('sonata.admin.extension');
     }
 }

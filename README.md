@@ -1,7 +1,7 @@
 SonataAutoConfigureBundle
 =========================
 
-Tries to auto configure your admin classes so you don't have to.
+Tries to auto configure your admin classes and extensions, so you don't have to.
 
 [![PHP Version](https://img.shields.io/badge/php-%5E7.1-blue.svg)](https://img.shields.io/badge/php-%5E7.1-blue.svg)
 [![Latest Stable Version](https://poser.pugx.org/kunicmarko/sonata-auto-configure-bundle/v/stable)](https://packagist.org/packages/kunicmarko/sonata-auto-configure-bundle)
@@ -120,6 +120,8 @@ public function setSomeService(SomeService $someService)
 
 ## Annotation
 
+Example admin:
+
 ```php
 <?php
 
@@ -150,6 +152,62 @@ use App\Entity\Category;
  * )
  */
 class CategoryAdmin
+{
+}
+```
+
+Example admin extensions:
+
+```php
+<?php
+
+namespace App\Entity;
+
+use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
+use Sonata\AdminBundle\Admin\AbstractAdminExtension;
+
+/**
+ * @Sonata\AdminExtensionOptions(
+ *     global=true
+ * )
+ */
+class GlobalExtension extends AbstractAdminExtension
+{
+}
+```
+
+```php
+<?php
+
+namespace App\Entity;
+
+use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
+use Sonata\AdminBundle\Admin\AbstractAdminExtension;
+
+/**
+ * @Sonata\AdminExtensionOptions(
+ *     target="app.admin.category"
+ * )
+ */
+class CategoryExtension extends AbstractAdminExtension
+{
+}
+```
+
+```php
+<?php
+
+namespace App\Entity;
+
+use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
+use Sonata\AdminBundle\Admin\AbstractAdminExtension;
+
+/**
+ * @Sonata\AdminExtensionOptions(
+ *     target={"app.admin.project", "app.admin.activity"}
+ * )
+ */
+class SortableExtension extends AbstractAdminExtension
 {
 }
 ```

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace KunicMarko\SonataAutoConfigureBundle\Tests;
 
 use KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler\AutoConfigureAdminClassesCompilerPass;
+use KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler\AutoConfigureAdminExtensionsCompilerPass;
 use KunicMarko\SonataAutoConfigureBundle\SonataAutoConfigureBundle;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
@@ -35,10 +36,21 @@ final class SonataAutoConfigureBundleTest extends TestCase
     {
         $containerBuilder = $this->prophesize(ContainerBuilder::class);
 
-        $containerBuilder->addCompilerPass(
-            Argument::type(AutoConfigureAdminClassesCompilerPass::class),
-            Argument::cetera()
-        )->shouldBeCalledTimes(1);
+        $containerBuilder
+            ->addCompilerPass(
+                Argument::type(AutoConfigureAdminClassesCompilerPass::class),
+                Argument::cetera()
+            )
+            ->shouldBeCalledTimes(1)
+            ->willReturn($containerBuilder);
+
+        $containerBuilder
+            ->addCompilerPass(
+                Argument::type(AutoConfigureAdminExtensionsCompilerPass::class),
+                Argument::cetera()
+            )
+            ->shouldBeCalledTimes(1)
+            ->willReturn($containerBuilder);
 
         $this->bundle->build($containerBuilder->reveal());
     }

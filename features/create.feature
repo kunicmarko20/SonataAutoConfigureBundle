@@ -10,5 +10,6 @@ Feature: Create
   Scenario: Create
     And I follow "Add new"
     And I fill in "Name" with "My Random Category"
-    And I press "Create"
+    And I press "Create and return to list"
     Then I should see "successfully created."
+    And I should see "will do"

@@ -20,6 +20,7 @@ final class CategoryAdmin extends AbstractAdmin
     {
         $listMapper
             ->addIdentifier('name')
+            ->add('extensionChangeThis')
             ->add('_action', 'actions', [
                 'actions' => [
                     'edit' => [],

@@ -10,7 +10,7 @@ use KunicMarko\SonataAutoConfigureBundle\DependencyInjection\SonataAutoConfigure
 use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\Extension\ExtensionWithoutOptions;
 use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\Extension\GlobalExtension;
 use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\Extension\MultipleTargetedExtension;
-use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\Extension\TargetedExtension;
+use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\Extension\TargetedWithPriorityExtension;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
@@ -42,7 +42,7 @@ final class AutoConfigureExtensionsCompilerPassTest extends TestCase
     /**
      * @dataProvider processData
      */
-    public function testProcess(string $extensionServiceId, array $expectedTags): void
+    public function testProcess(string $extensionServiceId, array $expectedTags = []): void
     {
         $this->loadConfig();
 
@@ -70,26 +70,33 @@ final class AutoConfigureExtensionsCompilerPassTest extends TestCase
         return [
             [
                 ExtensionWithoutOptions::class,
-                [
-                ]
             ],
             [
                 GlobalExtension::class,
                 [
-                    ['global' => true]
+                    [
+                        'global' => true,
+                    ],
                 ],
             ],
             [
-                TargetedExtension::class,
+                TargetedWithPriorityExtension::class,
                 [
-                    ['target' => 'app.admin.category'],
+                    [
+                        'target' => 'app.admin.category',
+                        'priority' => 5,
+                    ],
                 ]
             ],
             [
                 MultipleTargetedExtension::class,
                 [
-                    ['target' => 'app.admin.category'],
-                    ['target' => 'app.admin.media'],
+                    [
+                        'target' => 'app.admin.category',
+                    ],
+                    [
+                        'target' => 'app.admin.media',
+                    ],
                 ],
             ],
         ];

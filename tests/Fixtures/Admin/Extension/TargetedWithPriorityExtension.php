@@ -8,10 +8,11 @@ use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
 
 /**
  * @Sonata\AdminExtensionOptions(
- *     target="app.admin.category"
+ *     target={"app.admin.category"},
+ *     priority=5
  * )
  * @author Marco Polichetti <gremo1982@gmail.com>
  */
-class TargetedExtension
+class TargetedWithPriorityExtension
 {
 }

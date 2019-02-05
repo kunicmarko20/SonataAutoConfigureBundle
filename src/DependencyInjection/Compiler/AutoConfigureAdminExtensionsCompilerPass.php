@@ -48,22 +48,33 @@ final class AutoConfigureAdminExtensionsCompilerPass implements CompilerPassInte
                     ->setAutowired(true)
             );
 
-            if ($this->hasTargets($annotation)) {
-                foreach ($annotation->target as $target) {
-                    $definition->addTag('sonata.admin.extension', [
-                        'target' => $target,
-                        'priority' => $annotation->priority
-                    ]);
-                }
+            if (!$this->hasTargets($annotation)) {
+                $definition->addTag('sonata.admin.extension', $annotation->getOptions());
                 return;
             }
 
-            $definition->addTag('sonata.admin.extension', $annotation->getOptions());
+            foreach ($annotation->target as $target) {
+                $definition->addTag(
+                    'sonata.admin.extension',
+                    $this->getTagAttributes($target, $annotation)
+                );
+            }
         }
     }
 
     private function hasTargets(AdminExtensionOptions $annotation): bool
     {
         return \is_array($annotation->target) && \count($annotation->target) > 0;
+    }
+
+    private function getTagAttributes(string $target, AdminExtensionOptions $annotation): array
+    {
+        $attributes['target'] = $target;
+
+        if ($annotation->priority) {
+            $attributes['priority'] = $annotation->priority;
+        }
+
+        return $attributes;
     }
 }

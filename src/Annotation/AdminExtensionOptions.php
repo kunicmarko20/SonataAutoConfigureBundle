@@ -29,7 +29,7 @@ final class AdminExtensionOptions
 
     public function getOptions(): array
     {
-        return array_filter(
+        return \array_filter(
             [
                 'global' => $this->global,
                 'priority' => $this->priority,

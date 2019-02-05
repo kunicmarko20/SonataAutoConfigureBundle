@@ -185,10 +185,11 @@ namespace App\Admin;
 
 use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
 use Sonata\AdminBundle\Admin\AbstractAdminExtension;
+use App\Admin\ActivityAdmin;
 
 /**
  * @Sonata\AdminExtensionOptions(
- *     target={"app.admin.project", "app.admin.activity"}
+ *     target={"app.admin.project", ActivityAdmin::class}
  * )
  */
 final class SortableExtension extends AbstractAdminExtension

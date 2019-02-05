@@ -17,6 +17,8 @@ Documentation
 * [Configuration](#configuration)
 * [How does it work](#how-does-it-work)
 * [Annotation](#annotation)
+    * [AdminOptions](#adminoptions)
+    * [AdminExtensionOptions](#adminextensionoptions)
 
 ## Installation
 
@@ -120,7 +122,7 @@ public function setSomeService(SomeService $someService)
 
 ## Annotation
 
-Example admin:
+### AdminOptions
 
 ```php
 <?php
@@ -156,12 +158,12 @@ class CategoryAdmin
 }
 ```
 
-Example admin extensions:
+### AdminExtensionOptions
 
 ```php
 <?php
 
-namespace App\Entity;
+namespace App\Admin;
 
 use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
 use Sonata\AdminBundle\Admin\AbstractAdminExtension;
@@ -171,7 +173,7 @@ use Sonata\AdminBundle\Admin\AbstractAdminExtension;
  *     global=true
  * )
  */
-class GlobalExtension extends AbstractAdminExtension
+final class GlobalExtension extends AbstractAdminExtension
 {
 }
 ```
@@ -179,25 +181,7 @@ class GlobalExtension extends AbstractAdminExtension
 ```php
 <?php
 
-namespace App\Entity;
-
-use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
-use Sonata\AdminBundle\Admin\AbstractAdminExtension;
-
-/**
- * @Sonata\AdminExtensionOptions(
- *     target="app.admin.category"
- * )
- */
-class CategoryExtension extends AbstractAdminExtension
-{
-}
-```
-
-```php
-<?php
-
-namespace App\Entity;
+namespace App\Admin;
 
 use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
 use Sonata\AdminBundle\Admin\AbstractAdminExtension;
@@ -207,7 +191,7 @@ use Sonata\AdminBundle\Admin\AbstractAdminExtension;
  *     target={"app.admin.project", "app.admin.activity"}
  * )
  */
-class SortableExtension extends AbstractAdminExtension
+final class SortableExtension extends AbstractAdminExtension
 {
 }
 ```

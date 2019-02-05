@@ -21,6 +21,11 @@ final class Category
      */
     private $name;
 
+    /**
+     * @ORM\Column(name="extension_change_this", type="string", length=255, nullable=true)
+     */
+    public $extensionChangeThis;
+
     public function __construct(string $name = null)
     {
         $this->name = $name;

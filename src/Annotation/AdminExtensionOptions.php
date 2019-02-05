@@ -18,6 +18,11 @@ final class AdminExtensionOptions
     public $global;
 
     /**
+     * @var integer
+     */
+    public $priority;
+
+    /**
      * @var string[]
      */
     public $target;
@@ -27,9 +32,10 @@ final class AdminExtensionOptions
         return array_filter(
             [
                 'global' => $this->global,
+                'priority' => $this->priority,
                 'target' => $this->target,
             ],
-            function ($value) {
+            static function ($value): bool {
                 return $value !== null;
             }
         );

@@ -1,0 +1,1145 @@
+2019-02-05T20:53:54+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:53:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:55+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:53:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:55 2019] 127.0.0.1:58594 [200]: /admin/dashboard
+2019-02-05T20:53:55+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:53:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:56+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:56+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:56+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:56 2019] 127.0.0.1:58598 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:53:56+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:53:56+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:56+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58600 [200]: /admin/fixtures/project/category/create
+2019-02-05T20:53:57+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:53:57+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:53:57+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:53:57+00:00 [debug] INSERT INTO category (name, extension_change_this) VALUES (?, ?)
+2019-02-05T20:53:57+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58602 [302]: /admin/fixtures/project/category/create?uniqid=s916a89a0f2
+2019-02-05T20:53:57+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:53:57+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:57+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58604 [200]: /admin/fixtures/project/category/1/edit
+2019-02-05T20:53:57+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:53:57+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:57+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58606 [200]: /admin/dashboard
+2019-02-05T20:53:57+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:53:57+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:57+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58608 [200]: /admin/dashboard
+2019-02-05T20:53:57+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:53:57+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:57+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:57+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:57+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:57+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:57 2019] 127.0.0.1:58610 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:53:58+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:53:58+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:58+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:58 2019] 127.0.0.1:58612 [200]: /admin/dashboard
+2019-02-05T20:53:58+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:53:58+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:58+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:58+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:58+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:58 2019] 127.0.0.1:58614 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:53:58+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:53:58+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:53:58+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:53:58+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:53:58 2019] 127.0.0.1:58616 [200]: /admin/dashboard
+[Tue Feb  5 20:54:53 2019] Failed to listen on 127.0.0.1:8000 (reason: Address already in use)
+2019-02-05T20:54:53+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:53+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58620 [200]: /admin/dashboard
+2019-02-05T20:54:53+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:53+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:53+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58622 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:54:53+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58624 [200]: /admin/fixtures/project/category/create
+2019-02-05T20:54:53+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:54:53+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:54:53+00:00 [debug] INSERT INTO category (name, extension_change_this) VALUES (?, ?)
+2019-02-05T20:54:53+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58626 [302]: /admin/fixtures/project/category/create?uniqid=s916a89a0f2
+2019-02-05T20:54:53+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58628 [200]: /admin/fixtures/project/category/1/edit
+2019-02-05T20:54:53+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:54:53+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:53+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:54:53+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:53 2019] 127.0.0.1:58630 [200]: /admin/dashboard
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:54+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58632 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58634 [200]: /admin/fixtures/project/category/2/edit
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:54:54+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:54:54+00:00 [debug] UPDATE category SET name = ? WHERE id = ?
+2019-02-05T20:54:54+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58636 [302]: /admin/fixtures/project/category/2/edit?uniqid=s916a89a0f2
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58638 [200]: /admin/fixtures/project/category/2/edit
+2019-02-05T20:54:54+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58640 [200]: /admin/dashboard
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:54+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58642 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:54:54+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58644 [200]: /admin/dashboard
+2019-02-05T20:54:54+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:54+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58646 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:54:54+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:54:54+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:54+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:54:54+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:54 2019] 127.0.0.1:58648 [200]: /admin/dashboard
+2019-02-05T20:54:55+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:55+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:55+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:55+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:55 2019] 127.0.0.1:58650 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:54:55+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:54:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:55+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:54:55 2019] 127.0.0.1:58652 [200]: /admin/fixtures/project/category/4/delete
+2019-02-05T20:54:55+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:54:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:55+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:54:55+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:54:55+00:00 [debug] DELETE FROM category WHERE id = ?
+2019-02-05T20:54:55+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:54:55 2019] 127.0.0.1:58654 [302]: /admin/fixtures/project/category/4/delete
+2019-02-05T20:54:55+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:54:55+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:54:55+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:54:55+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:55+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:54:55+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:54:55 2019] 127.0.0.1:58656 [200]: /admin/fixtures/project/category/list?filter%5B_sort_order%5D=ASC&filter%5B_sort_by%5D=id&filter%5B_page%5D=1&filter%5B_per_page%5D=32
+2019-02-05T20:55:28+00:00 [error] Uncaught PHP Exception Symfony\Component\HttpKernel\Exception\NotFoundHttpException: "No route found for "GET /"" at /Storage/www/SonataAutoConfigureBundle/vendor/symfony/http-kernel/EventListener/RouterListener.php line 139
+[Tue Feb  5 20:55:28 2019] 127.0.0.1:58660 [404]: /
+2019-02-05T20:55:32+00:00 [info] Matched route "sonata_admin_redirect".
+2019-02-05T20:55:32+00:00 [info] Populated the TokenStorage with an anonymous Token.
+[Tue Feb  5 20:55:32 2019] 127.0.0.1:58662 [301]: /admin/
+2019-02-05T20:55:32+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:55:32+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:55:32+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:55:32+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:55:32 2019] 127.0.0.1:58664 [200]: /admin/dashboard
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58666 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58668 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58670 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58672 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58674 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58676 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58678 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58680 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58682 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58684 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58686 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58688 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58690 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58692 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58694 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58696 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58698 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58700 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58702 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58704 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58706 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58708 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58710 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58712 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58714 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58716 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58718 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58720 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58722 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58724 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58726 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58728 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58730 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58732 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58734 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:55:33 2019] 127.0.0.1:58736 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:55:34 2019] 127.0.0.1:58738 [200]: /bundles/sonatacore/vendor/components-font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0
+2019-02-05T20:55:36+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:55:36+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:36+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:55:36+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:55:36+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:55:36+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58742 [200]: /admin/fixtures/project/category/list
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58744 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58746 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58748 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58750 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58752 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58754 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58756 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58758 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58760 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58762 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58764 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58766 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58768 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58770 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58772 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58774 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58776 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58778 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58780 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58782 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58784 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58786 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58788 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58790 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58794 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58792 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58796 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58798 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58800 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58802 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58804 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58806 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58808 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58810 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58812 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:55:36 2019] 127.0.0.1:58814 [200]: /bundles/sonataadmin/logo_title.png
+2019-02-05T20:55:39+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:55:39+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:55:39+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58816 [200]: /admin/fixtures/project/category/create
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58818 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58820 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58822 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58824 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58826 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58830 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58828 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58832 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58834 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58836 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58838 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58840 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58842 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58844 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58846 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58848 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58850 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58854 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58852 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58856 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58860 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58858 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58862 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58864 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58872 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58870 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58868 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58866 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58874 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58876 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58878 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58880 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58882 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58884 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:55:39 2019] 127.0.0.1:58886 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:55:40 2019] 127.0.0.1:58888 [200]: /bundles/sonataadmin/logo_title.png
+2019-02-05T20:55:43+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:55:43+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:55:43+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:55:43+00:00 [debug] INSERT INTO category (name, extension_change_this) VALUES (?, ?)
+2019-02-05T20:55:43+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58890 [302]: /admin/fixtures/project/category/create?uniqid=s916a89a0f2
+2019-02-05T20:55:43+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:55:43+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:43+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:55:43+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58892 [200]: /admin/fixtures/project/category/5/edit
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58894 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58896 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58898 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58900 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58902 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58904 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58906 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58908 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58910 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58912 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58914 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58916 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58918 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58920 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58922 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58924 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58934 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58926 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58928 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58930 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58932 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58936 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58938 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58940 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58942 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58944 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58946 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58948 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58950 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58952 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58954 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58956 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58958 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58960 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:55:43 2019] 127.0.0.1:58962 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:55:44 2019] 127.0.0.1:58964 [200]: /bundles/sonataadmin/logo_title.png
+2019-02-05T20:55:49+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:55:49+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:55:49+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:55:49+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:55:49+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:55:49+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:55:49 2019] 127.0.0.1:58966 [200]: /admin/fixtures/project/category/list
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58968 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58970 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58972 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58974 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58976 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58978 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58980 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58982 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58984 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58986 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58988 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58994 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58992 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58990 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58996 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:58998 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59000 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59002 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59004 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59006 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59008 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59010 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59012 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59014 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59016 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59018 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59020 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59022 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59024 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59026 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59028 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59030 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59032 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59034 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59036 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59038 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59040 [200]: /bundles/sonatacore/vendor/select2/select2.png
+[Tue Feb  5 20:55:50 2019] 127.0.0.1:59042 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.png
+2019-02-05T20:56:10+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:56:10+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:56:10+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:56:10 2019] 127.0.0.1:59044 [200]: /admin/fixtures/project/category/create
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59046 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59048 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59050 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59052 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59054 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59056 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59058 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59060 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59062 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59064 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59066 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59068 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59070 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59072 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59076 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59074 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59078 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59080 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59082 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59084 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59086 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59088 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59090 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59092 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59094 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59096 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59100 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59098 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59102 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59104 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59106 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59108 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59110 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59112 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59114 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:56:11 2019] 127.0.0.1:59116 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:56:28 2019] 127.0.0.1:59118 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css.map
+2019-02-05T20:56:48+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:56:48+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:56:48+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:56:48+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:56:48+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:56:48+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59120 [200]: /admin/fixtures/project/category/list
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59122 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59124 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59128 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59126 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59130 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59132 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59134 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59136 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59138 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59140 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59144 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59142 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59146 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59148 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59150 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59152 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59156 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59154 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59158 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59160 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59162 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59164 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59168 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59166 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59170 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59172 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59174 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59176 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59178 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59184 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59180 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59182 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59186 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59188 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:56:48 2019] 127.0.0.1:59190 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:56:49 2019] 127.0.0.1:59192 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:56:49 2019] 127.0.0.1:59194 [200]: /bundles/sonatacore/vendor/select2/select2.png
+[Tue Feb  5 20:56:49 2019] 127.0.0.1:59196 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.png
+[Tue Feb  5 20:56:49 2019] 127.0.0.1:59198 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css.map
+2019-02-05T20:56:50+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:56:50+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:56:50+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:56:50+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59200 [200]: /admin/fixtures/project/category/5/delete
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59202 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59204 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59206 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59208 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59210 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59212 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59214 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59216 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59218 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59220 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59222 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59224 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59226 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59228 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59230 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59232 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59236 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59234 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59238 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59240 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:56:50 2019] 127.0.0.1:59242 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59244 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59246 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59248 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59250 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59252 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59254 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59256 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59258 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59260 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59262 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59264 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59266 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59268 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59270 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59272 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:56:51 2019] 127.0.0.1:59274 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css.map
+2019-02-05T20:56:52+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:56:52+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:56:52+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:56:52+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:56:52+00:00 [debug] DELETE FROM category WHERE id = ?
+2019-02-05T20:56:52+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59276 [302]: /admin/fixtures/project/category/5/delete
+2019-02-05T20:56:52+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:56:52+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:56:52+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:56:52+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:56:52+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:56:52+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59278 [200]: /admin/fixtures/project/category/list?filter%5B_sort_order%5D=ASC&filter%5B_sort_by%5D=id&filter%5B_page%5D=1&filter%5B_per_page%5D=32
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59280 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59282 [200]: /bundles/sonatacore/vendor/components-font-awesome/css/font-awesome.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59284 [200]: /bundles/sonatacore/vendor/ionicons/css/ionicons.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59286 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/AdminLTE.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59288 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/css/skins/skin-black.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59290 [200]: /bundles/sonataadmin/vendor/iCheck/skins/square/blue.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59292 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59296 [200]: /bundles/sonataadmin/vendor/jqueryui/themes/base/jquery-ui.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59298 [200]: /bundles/sonataadmin/vendor/jquery.scrollTo/jquery.scrollTo.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59300 [200]: /bundles/sonatacore/vendor/select2/select2.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59302 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/jquery-ui.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59304 [200]: /bundles/sonataadmin/vendor/jqueryui/ui/minified/i18n/jquery-ui-i18n.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59306 [200]: /bundles/sonatacore/vendor/moment/min/moment.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59312 [200]: /bundles/sonataadmin/Admin.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59310 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/css/bootstrap-editable.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59308 [200]: /bundles/sonatacore/vendor/select2-bootstrap-css/select2-bootstrap.min.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59314 [200]: /bundles/sonataadmin/treeview.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59316 [200]: /bundles/sonataadmin/sidebar.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59318 [200]: /bundles/sonataadmin/css/styles.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59320 [200]: /bundles/sonataadmin/css/layout.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59322 [200]: /bundles/sonataadmin/css/tree.css
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59326 [200]: /bundles/sonatacore/vendor/bootstrap/dist/js/bootstrap.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59324 [200]: /bundles/sonatacore/vendor/jquery/dist/jquery.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59328 [200]: /bundles/sonatacore/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59330 [200]: /bundles/sonataadmin/vendor/jquery-form/jquery.form.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59332 [200]: /bundles/sonataadmin/jquery/jquery.confirmExit.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59334 [200]: /bundles/sonataadmin/vendor/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59336 [200]: /bundles/sonatacore/vendor/select2/select2.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59338 [200]: /bundles/sonataadmin/vendor/admin-lte/dist/js/app.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59340 [200]: /bundles/sonataadmin/vendor/iCheck/icheck.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59342 [200]: /bundles/sonataadmin/vendor/slimScroll/jquery.slimscroll.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59344 [200]: /bundles/sonataadmin/vendor/waypoints/lib/jquery.waypoints.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59348 [200]: /bundles/sonataadmin/vendor/readmore-js/readmore.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59346 [200]: /bundles/sonataadmin/vendor/waypoints/lib/shortcuts/sticky.min.js
+[Tue Feb  5 20:56:52 2019] 127.0.0.1:59350 [200]: /bundles/sonataadmin/vendor/masonry/dist/masonry.pkgd.min.js
+[Tue Feb  5 20:56:53 2019] 127.0.0.1:59352 [200]: /bundles/sonataadmin/logo_title.png
+[Tue Feb  5 20:56:53 2019] 127.0.0.1:59356 [200]: /bundles/sonatacore/vendor/bootstrap/dist/css/bootstrap.min.css.map
+2019-02-05T20:57:16+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:57:16+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:16+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59358 [200]: /admin/dashboard
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:17+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59360 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59362 [200]: /admin/fixtures/project/category/create
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_create".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:57:17+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:57:17+00:00 [debug] INSERT INTO category (name, extension_change_this) VALUES (?, ?)
+2019-02-05T20:57:17+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59364 [302]: /admin/fixtures/project/category/create?uniqid=s916a89a0f2
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:17+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59366 [200]: /admin/fixtures/project/category/list?filter%5B_sort_order%5D=ASC&filter%5B_sort_by%5D=id&filter%5B_page%5D=1&filter%5B_per_page%5D=32
+2019-02-05T20:57:17+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59368 [200]: /admin/dashboard
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:17+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59370 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59372 [200]: /admin/fixtures/project/category/7/edit
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\InlineValidator class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\InlineValidator instead.
+2019-02-05T20:57:17+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:57:17+00:00 [debug] UPDATE category SET name = ? WHERE id = ?
+2019-02-05T20:57:17+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59374 [302]: /admin/fixtures/project/category/7/edit?uniqid=s916a89a0f2
+2019-02-05T20:57:17+00:00 [info] Matched route "admin_fixtures_project_category_edit".
+2019-02-05T20:57:17+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:17+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Validator\Constraints\InlineConstraint class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Form\Validator\Constraint\InlineConstraint instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:57:17+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:57:17 2019] 127.0.0.1:59376 [200]: /admin/fixtures/project/category/7/edit
+2019-02-05T20:57:18+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59378 [200]: /admin/dashboard
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59380 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:57:18+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59382 [200]: /admin/dashboard
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59384 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:57:18+00:00 [info] Matched route "sonata_admin_dashboard".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "Symfony\Bundle\FrameworkBundle\Controller\Controller" class is deprecated since Symfony 4.2, use Symfony\Bundle\FrameworkBundle\Controller\AbstractController instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [info] [cms::renderBlock] block.id=5, block.type=sonata.admin.block.admin_list 
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59386 [200]: /admin/dashboard
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ WHERE c0_.id IN (?) ORDER BY c0_.id ASC
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59388 [200]: /admin/fixtures/project/category/list
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59390 [200]: /admin/fixtures/project/category/9/delete
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_delete".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT t0.id AS id_1, t0.name AS name_2, t0.extension_change_this AS extension_change_this_3 FROM category t0 WHERE t0.id = ?
+2019-02-05T20:57:18+00:00 [debug] "START TRANSACTION"
+2019-02-05T20:57:18+00:00 [debug] DELETE FROM category WHERE id = ?
+2019-02-05T20:57:18+00:00 [debug] "COMMIT"
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59392 [302]: /admin/fixtures/project/category/9/delete
+2019-02-05T20:57:18+00:00 [info] Matched route "admin_fixtures_project_category_list".
+2019-02-05T20:57:18+00:00 [info] Populated the TokenStorage with an anonymous Token.
+2019-02-05T20:57:18+00:00 [debug] SELECT count(DISTINCT c0_.id) AS sclr_0 FROM category c0_
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FlashMessageExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FlashMessageExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\FormTypeExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\FormTypeExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\DeprecatedTemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\DeprecatedTemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\TemplateExtension class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\TemplateExtension instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.chain" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\AdapterChain class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\AdapterChain instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The "sonata.core.model.adapter.doctrine_orm" service is deprecated since 3.x and will be removed in 4.0.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Model\Adapter\DoctrineORMAdapter class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Doctrine\Adapter\ORM\DoctrineORMAdapter instead.
+2019-02-05T20:57:18+00:00 [debug] SELECT DISTINCT c0_.id AS id_0, c0_.id AS id_1 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [debug] SELECT c0_.id AS id_0, c0_.name AS name_1, c0_.extension_change_this AS extension_change_this_2 FROM category c0_ ORDER BY c0_.id ASC LIMIT 32
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\FlashMessage\FlashManager class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\FlashMessage\FlashManager instead.
+2019-02-05T20:57:18+00:00 [info] User Deprecated: The Sonata\CoreBundle\Twig\Extension\StatusRuntime class is deprecated since version 3.x and will be removed in 4.0. Use Sonata\Twig\Extension\StatusRuntime instead.
+[Tue Feb  5 20:57:18 2019] 127.0.0.1:59394 [200]: /admin/fixtures/project/category/list?filter%5B_sort_order%5D=ASC&filter%5B_sort_by%5D=id&filter%5B_page%5D=1&filter%5B_per_page%5D=32

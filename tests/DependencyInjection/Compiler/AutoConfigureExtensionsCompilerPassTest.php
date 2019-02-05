@@ -108,4 +108,34 @@ final class AutoConfigureExtensionsCompilerPassTest extends TestCase
             'sonata_auto_configure' => $config
         ], $this->containerBuilder);
     }
+
+    public function testProcessSkipAutoConfigured(): void
+    {
+        $this->loadConfig();
+        $this->containerBuilder->setDefinition(
+            TargetedWithPriorityExtension::class,
+            (new Definition(TargetedWithPriorityExtension::class))->addTag('sonata.admin.extension')->setAutoconfigured(false)
+        );
+
+        $this->autoconfigureExtensionsCompilerPass->process($this->containerBuilder);
+
+        $definition = $this->containerBuilder->getDefinition(TargetedWithPriorityExtension::class);
+        $tag = $definition->getTag('sonata.admin.extension');
+        $this->assertEmpty(\reset($tag));
+    }
+
+    public function testProcessSkipIfAnnotationMissing(): void
+    {
+        $this->loadConfig();
+        $this->containerBuilder->setDefinition(
+            ExtensionWithoutOptions::class,
+            (new Definition(ExtensionWithoutOptions::class))->addTag('sonata.admin.extension')->setAutoconfigured(true)
+        );
+
+        $this->autoconfigureExtensionsCompilerPass->process($this->containerBuilder);
+
+        $definition = $this->containerBuilder->getDefinition(ExtensionWithoutOptions::class);
+        $tag = $definition->getTag('sonata.admin.extension');
+        $this->assertEmpty(\reset($tag));
+    }
 }

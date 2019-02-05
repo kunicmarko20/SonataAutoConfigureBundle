@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\Tests\DependencyInjection\Compiler;
 
+use KunicMarko\SonataAutoConfigureBundle\Exception\EntityNotFound;
 use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\DisableAutowireEntityAdmin;
 use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
 use Doctrine\Common\Annotations\AnnotationReader;
@@ -15,6 +16,7 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Admin\NoEntityAdmin;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>
@@ -48,7 +50,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
         ?string $entity,
         ?string $adminCode,
         array $tagOptions,
-        array $templates = []): void
+        array $methodCalls = []): void
     {
         $this->loadConfig([
             'admin' => [
@@ -91,13 +93,9 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             $entity,
             $adminDefinition->getArgument(1)
         );
-        
-        if ($templates) {
-            $methodCalls = $adminDefinition->getMethodCalls();
-            $firstMethodCall = \reset($methodCalls);
-            $this->assertSame('setTemplate', $firstMethodCall[0]);
-            $this->assertSame(\key($templates), $firstMethodCall[1][0]);
-            $this->assertSame(\reset($templates), $firstMethodCall[1][1]);
+
+        foreach ($methodCalls as $methodCall) {
+            $this->assertTrue($adminDefinition->hasMethodCall($methodCall));
         }
     }
 
@@ -132,8 +130,9 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                     'on_top' => false,
                 ],
                 [
-                    "foo" => "foo.html.twig"
-                ]
+                    'setTemplate',
+                    'setTranslationDomain',
+                ],
             ],
             [
                 DisableAutowireEntityAdmin::class,
@@ -159,9 +158,6 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
         ], $this->containerBuilder);
     }
 
-    /**
-     * @expectedException \Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException
-     */
     public function testProcessSkipAutoConfigured(): void
     {
         $this->loadConfig();
@@ -172,12 +168,10 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
 
         $this->autoConfigureAdminClassesCompilerPass->process($this->containerBuilder);
 
+        $this->expectException(ServiceNotFoundException::class);
         $this->containerBuilder->getDefinition('admin.category');
     }
 
-    /**
-     * @expectedException \KunicMarko\SonataAutoConfigureBundle\Exception\EntityNotFound
-     */
     public function testProcessEntityNotFound(): void
     {
         $this->loadConfig();
@@ -186,6 +180,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             (new Definition(NoEntityAdmin::class))->addTag('sonata.admin')->setAutoconfigured(true)
         );
 
+        $this->expectException(EntityNotFound::class);
         $this->autoConfigureAdminClassesCompilerPass->process($this->containerBuilder);
     }
 }

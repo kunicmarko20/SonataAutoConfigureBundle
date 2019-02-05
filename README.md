@@ -127,11 +127,12 @@ public function setSomeService(SomeService $someService)
 ```php
 <?php
 
-namespace App\Entity;
+namespace App\Admin;
 
 use KunicMarko\SonataAutoConfigureBundle\Annotation as Sonata;
 use App\Controller\Admin\CategoryController;
 use App\Entity\Category;
+use Sonata\AdminBundle\Admin\AbstractAdmin;
 
 /**
  * @Sonata\AdminOptions(
@@ -156,7 +157,7 @@ use App\Entity\Category;
  *     },
  * )
  */
-class CategoryAdmin
+final class CategoryAdmin extends AbstractAdmin
 {
 }
 ```

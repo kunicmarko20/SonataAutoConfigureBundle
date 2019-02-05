@@ -4,19 +4,13 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler;
 
-use Doctrine\Common\Annotations\AnnotationReader;
+use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\Inflector\Inflector;
 use KunicMarko\SonataAutoConfigureBundle\Annotation\AdminOptions;
 use KunicMarko\SonataAutoConfigureBundle\Exception\EntityNotFound;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
-use ReflectionClass;
-use function explode;
-use function preg_replace;
-use function end;
-use function str_replace;
-use function class_exists;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>
@@ -45,8 +39,10 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
 
     public function process(ContainerBuilder $container): void
     {
-        /** @var AnnotationReader $annotationReader */
         $annotationReader = $container->get('annotation_reader');
+
+        \assert($annotationReader instanceof Reader);
+
         $adminSuffix = $container->getParameter('sonata.auto_configure.admin.suffix');
         $this->managerType = $container->getParameter('sonata.auto_configure.admin.manager_type');
         $this->entityNamespaces = $container->getParameter('sonata.auto_configure.entity.namespaces');
@@ -69,17 +65,17 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
                 continue;
             }
 
-            $adminClassAsArray = explode('\\', $adminClass = $definition->getClass());
+            $adminClassAsArray = \explode('\\', $adminClass = $definition->getClass());
 
-            $name = end($adminClassAsArray);
+            $name = \end($adminClassAsArray);
 
             if ($adminSuffix) {
-                $name = preg_replace("/$adminSuffix$/", '', $name);
+                $name = \preg_replace("/$adminSuffix$/", '', $name);
             }
 
             /** @var AdminOptions $annotation */
             $annotation = $annotationReader->getClassAnnotation(
-                new ReflectionClass($adminClass),
+                new \ReflectionClass($adminClass),
                 AdminOptions::class
             ) ?? new AdminOptions();
 
@@ -116,7 +112,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
     private function setDefaultValuesForAnnotation(AdminOptions $annotation, string $name, array $defaults): void
     {
         if (!$annotation->label) {
-            $annotation->label = Inflector::ucwords(str_replace('_', ' ', Inflector::tableize($name)));
+            $annotation->label = Inflector::ucwords(\str_replace('_', ' ', Inflector::tableize($name)));
         }
 
         if (!$annotation->labelCatalogue) {
@@ -159,7 +155,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
     private function findEntity(string $name): array
     {
         foreach ($this->entityNamespaces as $namespaceOptions) {
-            if (class_exists($className = "{$namespaceOptions['namespace']}\\$name")) {
+            if (\class_exists($className = "{$namespaceOptions['namespace']}\\$name")) {
                 return [$className, $namespaceOptions['manager_type']];
             }
         }
@@ -170,7 +166,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
     private function findController(string $name): ?string
     {
         foreach ($this->controllerNamespaces as $namespace) {
-            if (class_exists($className = "$namespace\\$name")) {
+            if (\class_exists($className = "$namespace\\$name")) {
                 return $className;
             }
         }

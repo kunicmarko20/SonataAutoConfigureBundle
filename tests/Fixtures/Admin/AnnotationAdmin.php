@@ -12,6 +12,7 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
  *     label="This is a Label",
  *     entity=Category::class,
  *     group="not test",
+ *     translationDomain="Foo",
  *     templates={
  *         "foo": "foo.html.twig"
  *     },

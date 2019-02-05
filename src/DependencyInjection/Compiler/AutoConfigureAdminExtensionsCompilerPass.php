@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler;
 
-use Doctrine\Common\Annotations\AnnotationReader;
+use Doctrine\Common\Annotations\Reader;
 use KunicMarko\SonataAutoConfigureBundle\Annotation\AdminExtensionOptions;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -19,7 +19,7 @@ final class AutoConfigureAdminExtensionsCompilerPass implements CompilerPassInte
     {
         $annotationReader = $container->get('annotation_reader');
 
-        \assert($annotationReader instanceof AnnotationReader);
+        \assert($annotationReader instanceof Reader);
 
         foreach ($container->findTaggedServiceIds('sonata.admin.extension') as $id => $attributes) {
             $definition = $container->getDefinition($id);

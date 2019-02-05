@@ -92,6 +92,11 @@ final class AdminOptions
      */
     public $autowireEntity = true;
 
+    /**
+     * @var array<string, string>
+     */
+    public $templates = [];
+
     public function getOptions(): array
     {
         return array_filter(

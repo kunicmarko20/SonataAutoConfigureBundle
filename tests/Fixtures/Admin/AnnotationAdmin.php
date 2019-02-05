@@ -12,6 +12,9 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
  *     label="This is a Label",
  *     entity=Category::class,
  *     group="not test",
+ *     templates={
+ *         "foo": "foo.html.twig"
+ *     },
  * )
  * @author Marko Kunic <kunicmarko20@gmail.com>
  */

@@ -151,6 +151,9 @@ use App\Entity\Category;
  *     entity=Category::class,
  *     adminCode="admin_code",
  *     autowireEntity=true,
+ *     templates={
+ *         "list": "admin/category/list.html.twig"
+ *     },
  * )
  */
 class CategoryAdmin

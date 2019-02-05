@@ -102,6 +102,10 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
             if ($annotation->translationDomain) {
                 $definition->addMethodCall('setTranslationDomain', [$annotation->translationDomain]);
             }
+
+            foreach ($annotation->templates as $name => $template) {
+                $definition->addMethodCall('setTemplate', [$name, $template]);
+            }
         }
     }
 

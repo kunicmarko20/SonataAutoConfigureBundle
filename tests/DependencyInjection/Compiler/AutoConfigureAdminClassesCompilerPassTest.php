@@ -43,7 +43,12 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
     /**
      * @dataProvider processData
      */
-    public function testProcess(string $admin, ?string $entity, ?string $adminCode, array $tagOptions): void
+    public function testProcess(
+        string $admin,
+        ?string $entity,
+        ?string $adminCode,
+        array $tagOptions,
+        array $templates = []): void
     {
         $this->loadConfig([
             'admin' => [
@@ -86,6 +91,10 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
             $entity,
             $adminDefinition->getArgument(1)
         );
+        
+        if ($templates) {
+            $this->assertTrue($adminDefinition->hasMethodCall('setTemplate'));
+        }
     }
 
     public function processData(): array
@@ -118,6 +127,9 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                     'keep_open' => false,
                     'on_top' => false,
                 ],
+                [
+                    "foo" => "foo.html.twig"
+                ]
             ],
             [
                 DisableAutowireEntityAdmin::class,

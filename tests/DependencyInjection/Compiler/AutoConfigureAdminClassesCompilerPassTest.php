@@ -93,7 +93,11 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
         );
         
         if ($templates) {
-            $this->assertTrue($adminDefinition->hasMethodCall('setTemplate'));
+            $methodCalls = $adminDefinition->getMethodCalls();
+            $firstMethodCall = \reset($methodCalls);
+            $this->assertSame('setTemplate', $firstMethodCall[0]);
+            $this->assertSame(\key($templates), $firstMethodCall[1][0]);
+            $this->assertSame(\reset($templates), $firstMethodCall[1][1]);
         }
     }
 

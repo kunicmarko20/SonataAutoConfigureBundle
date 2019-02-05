@@ -16,4 +16,4 @@ default:
         debug: true
         path: features/Fixtures/Project/src/Kernel.php
         class: KunicMarko\SonataAutoConfigureBundle\Features\Fixtures\Project\Kernel
-        bootstrap: tests/bootstrap.php
+        bootstrap: vendor/autoload.php

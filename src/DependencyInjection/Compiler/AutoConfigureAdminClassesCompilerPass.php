@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KunicMarko\SonataAutoConfigureBundle\DependencyInjection\Compiler;
 
-use Doctrine\Common\Annotations\AnnotationReader;
+use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\Inflector\Inflector;
 use KunicMarko\SonataAutoConfigureBundle\Annotation\AdminOptions;
 use KunicMarko\SonataAutoConfigureBundle\Exception\EntityNotFound;
@@ -41,7 +41,7 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
     {
         $annotationReader = $container->get('annotation_reader');
 
-        \assert($annotationReader instanceof AnnotationReader);
+        \assert($annotationReader instanceof Reader);
 
         $adminSuffix = $container->getParameter('sonata.auto_configure.admin.suffix');
         $this->managerType = $container->getParameter('sonata.auto_configure.admin.manager_type');

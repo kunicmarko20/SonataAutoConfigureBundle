@@ -16,6 +16,9 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
  *     templates={
  *         "foo": "foo.html.twig"
  *     },
+ *     children={
+ *         "admin.product"
+ *     }
  * )
  * @author Marko Kunic <kunicmarko20@gmail.com>
  */

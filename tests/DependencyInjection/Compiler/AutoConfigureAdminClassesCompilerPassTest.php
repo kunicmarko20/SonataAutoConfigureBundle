@@ -132,6 +132,7 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                 [
                     'setTemplate',
                     'setTranslationDomain',
+                    'addChild',
                 ],
             ],
             [

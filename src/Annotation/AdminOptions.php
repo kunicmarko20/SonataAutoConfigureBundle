@@ -97,6 +97,11 @@ final class AdminOptions
      */
     public $templates = [];
 
+    /**
+     * @var string[]
+     */
+    public $children = [];
+
     public function getOptions(): array
     {
         return \array_filter(

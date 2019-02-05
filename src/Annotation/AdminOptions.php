@@ -99,7 +99,7 @@ final class AdminOptions
 
     public function getOptions(): array
     {
-        return array_filter(
+        return \array_filter(
             [
                 'manager_type'              => $this->managerType,
                 'group'                     => $this->group,
@@ -113,7 +113,7 @@ final class AdminOptions
                 'label_catalogue'           => $this->labelCatalogue,
                 'pager_type'                => $this->pagerType,
             ],
-            function ($value) {
+            static function ($value): bool {
                 return $value !== null;
             }
         );

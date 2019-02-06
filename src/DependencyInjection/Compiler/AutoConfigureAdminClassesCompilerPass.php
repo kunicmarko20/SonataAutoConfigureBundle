@@ -11,6 +11,7 @@ use KunicMarko\SonataAutoConfigureBundle\Exception\EntityNotFound;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
+use Symfony\Component\DependencyInjection\Reference;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>
@@ -99,12 +100,16 @@ final class AutoConfigureAdminClassesCompilerPass implements CompilerPassInterfa
                 $definition->addMethodCall('setTranslationDomain', [$annotation->translationDomain]);
             }
 
-            if (!\is_array($annotation->templates)) {
-                continue;
+            if (\is_array($annotation->templates)) {
+                foreach ($annotation->templates as $name => $template) {
+                    $definition->addMethodCall('setTemplate', [$name, $template]);
+                }
             }
 
-            foreach ($annotation->templates as $name => $template) {
-                $definition->addMethodCall('setTemplate', [$name, $template]);
+            if (\is_array($annotation->children)) {
+                foreach ($annotation->children as $childId) {
+                    $definition->addMethodCall('addChild', [new Reference($childId)]);
+                }
             }
         }
     }

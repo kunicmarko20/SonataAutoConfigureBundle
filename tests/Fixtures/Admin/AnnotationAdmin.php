@@ -13,6 +13,10 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
  *     entity=Category::class,
  *     group="not test",
  *     translationDomain="Foo",
+ *     showInDashboard=true,
+ *     showMosaicButton=true,
+ *     keepOpen=false,
+ *     onTop=false,
  *     templates={
  *         "foo": "foo.html.twig"
  *     },

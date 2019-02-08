@@ -110,10 +110,6 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                     'manager_type' => 'orm',
                     'group' => 'test',
                     'label' => 'Category',
-                    'show_in_dashboard' => true,
-                    'show_mosaic_button' => true,
-                    'keep_open' => false,
-                    'on_top' => false,
                 ],
             ],
             [
@@ -143,10 +139,6 @@ final class AutoConfigureAdminClassesCompilerPassTest extends TestCase
                     'manager_type' => 'orm',
                     'group' => 'test',
                     'label' => 'Disable Autowire Entity',
-                    'show_in_dashboard' => true,
-                    'show_mosaic_button' => true,
-                    'keep_open' => false,
-                    'on_top' => false,
                 ],
             ],
         ];

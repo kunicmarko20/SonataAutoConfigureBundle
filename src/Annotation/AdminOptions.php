@@ -30,22 +30,22 @@ final class AdminOptions
     /**
      * @var bool
      */
-    public $showInDashboard = true;
+    public $showInDashboard;
 
     /**
      * @var bool
      */
-    public $showMosaicButton = true;
+    public $showMosaicButton;
 
     /**
      * @var bool
      */
-    public $keepOpen = false;
+    public $keepOpen;
 
     /**
      * @var bool
      */
-    public $onTop = false;
+    public $onTop;
 
     /**
      * @var string

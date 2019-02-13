@@ -76,7 +76,8 @@ the values that are mandatory are not present we still try to guess.
 
 First, we set the label and based on previous example it will be `Category`.
 
-Then, we set the admin code which will be the service id, it will be `admin.category`.
+Then, we set the admin code which will be the service id, in our case it is
+the class name.
 
 After, we try to find the `Category` entity in the list of namespaces you
 defined (by default it is just `App\Entity`). If the entity is not found an

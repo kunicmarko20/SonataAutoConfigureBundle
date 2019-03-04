@@ -50,7 +50,8 @@ final class AutoConfigureAdminExtensionsCompilerPass implements CompilerPassInte
 
             if (!$this->hasTargets($annotation)) {
                 $definition->addTag('sonata.admin.extension', $annotation->getOptions());
-                return;
+
+                continue;
             }
 
             foreach ($annotation->target as $target) {

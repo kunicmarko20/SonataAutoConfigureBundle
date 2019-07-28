@@ -21,7 +21,7 @@ use KunicMarko\SonataAutoConfigureBundle\Tests\Fixtures\Entity\Category;
  *         "foo": "foo.html.twig"
  *     },
  *     children={
- *         "admin.product"
+ *         "product": "admin.product"
  *     }
  * )
  * @author Marko Kunic <kunicmarko20@gmail.com>

@@ -156,7 +156,9 @@ use Sonata\AdminBundle\Admin\AbstractAdmin;
  *     templates={
  *         "list": "admin/category/list.html.twig"
  *     },
- *     children={"app.admin.product"}
+ *     children={
+ *         "product": "app.admin.product"
+ *     }
  * )
  */
 final class CategoryAdmin extends AbstractAdmin
